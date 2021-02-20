@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> location véhicule</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="/css/reservation.css">
+	
+</head>
+<body>
+	<header class="main-header">
+    <div class="nav">
+      <div class="logo">
+           <h1 class="main-logo">Car Agency</h1>
+     </div>
+     
+     <div class="main-nav">
+        <ul class="nav-items">
+           <li class="nav-links"><a href="index.html">Home</a></li>
+           <li class="nav-links"><a href="gallery.html">Gallery</a></li>
+           <li class="nav-links"><a href="reservation.html">Reservation</a></li>
+           <li class="nav-links"><a href="contact.html">Contact</a></li>
+        </ul> 
+     </div>
+  </div>
+		
+	</header>
+			
+		<div class="container">
+		<div class="t-types">
+			<div class="auto-img">
+            <img class="image" onclick="Reservation_citadine()" src="/gallery/FORD-FOCUS-4-COMPACTE-COMMERCIALISATION-MARCHE-MAROCAIN-UNE.jpg" alt="type1">
+                  
+            <img class="image" onclick="Reservation_compact()" src="/gallery/citroen-c3-a-77.jpg" alt="type1">
+                  
+            <img class="image" onclick="Reservation_berline()" src="/gallery/mercedes-classe-a.jpg" alt="type1">
+                  
+            <img class="image" onclick="Reservation_utilitaire()" src="/gallery/ecosport.jpg" alt="type1">
+         </div>
+		
+			<div class="big-img">
+            <img class="image" onclick="Reservation_moto()" src="/gallery/moto-2.jpg" alt="type1">
+
+			   <img class="image " onclick="Reservation_engin_de_chantier()" src="/gallery/chantie-2.jpg" alt="type1">
+		
+			   <img class="image " onclick="Reservation_camion()" src="/gallery/camion-1.png" alt="type1">
+		
+		</div>
+   </div>
+
+		
+       
+
+       <div class="content">
+
+		<form class="forme1" action="/action_page.php">
+  <div class="input" >
+  <input type="radio" id="Electrique" name="gender" value="Electrique">
+  <label for="male" id="elec">Electrique</label>
+  <input type="radio" id="Hybride" name="gender" value="Hybride">
+  <label for="female" id="hybr">Hybride</label>
+  <input type="radio" id="Essence" name="gender" value="Essence">
+  <label for="other" id="essence">Essence</label>
+  <input type="radio" id="Diesel" name="gender" value="Diesel">
+  <label for="other" id="diesel">Diesel</label>
+  </div>
+  
+</form>
+
+
+   
+   <div class="input-2" id="auto_manu" >
+  <form class="forme2"  action="/action_page.php">
+
+  <input type="radio" id="Manuelle" name="bv" value="Manuelle">
+  <label for="age1" id="manuelle">Manuelle</label>
+  <input type="radio" id="Automatique" name="bv" value="19">
+  <label for="age2" id="auto">Automatique</label><br />
+
+</form>
+</div>
+<div class="date">
+   <input class="jour" type="number" name="" min="1" value="number" id="dr">
+   <label for="age2">Number of Day</label>
+   <label>total price :</label>
+   <label id="prix"></label>
+
+  <input class="btn" type="submit" value="Reservation Now" onclick="calcul()">
+</div>
+
+
+</div>
+</div>
+<footer class="main-footer">
+  <div class="social-media">
+     <h1 class="our-socialmedia">
+        where you can find us
+     </h1>
+     <div class="media-list">
+        <a href="#" class="icon-img"><img src="/icons/facebook.png" alt=""></a>
+        <a href="#" class="icon-img"><img src="/icons/instagram.png" alt=""></a>
+        <a href="#" class="icon-img"><img src="/icons/linkedin.png" alt=""></a>
+        <a href="#" class="icon-img"><img src="/icons/Twitter.png" alt=""></a>
+     </div>
+     <div class="news-letter">
+        <h1 class="contact">News Letter</h1>
+        <div class="input-div">
+           <input type="email" placeholder="   Enter Your Email" class="email">
+           <button class="btn-footer">Subscribe</button>
+        </div>
+     </div>
+  </div>
+</footer>
+<script src="/js/script.js"></script>
+
+</body>
+</html>

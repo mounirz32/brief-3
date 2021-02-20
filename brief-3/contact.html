@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/contact.css">
+   <script src="js/contact.js"></script>
+   <title>Document</title>
+</head>
+
+<body>
+   <header class="main-header">
+      <div class="nav">
+         <div class="logo">
+              <h1 class="main-logo">Car Agency</h1>
+         </div>
+        <div class="main-nav">
+           <ul class="nav-items">
+              <li class="nav-links"><a href="index.html">Home</a></li>
+              <li class="nav-links"><a href="gallery.html">Gallery</a></li>
+              <li class="nav-links"><a href="reservation.html">Reservation</a></li>
+              <li class="nav-links"><a href="contact.html">Contact</a></li>
+           </ul> 
+        </div>
+     </div>
+   </header>
+   <section class="contact">
+      <div class="title">
+         <h1>contact us</h1>
+      </div>
+      <div id="forum">
+         <div class="forum">
+            <input type="text" placeholder="Enter your name" id="name">
+            <label id="msgName"></label>
+            </div>
+            <div class="forumss">
+            <input type="text" placeholder="Enter your lastname" id="lastname">
+            <label id="msgLastname"></label>
+            </div>
+         <div class="form">
+            <input type="email" placeholder="Enter your Email" id="email" name="email">
+            <label id="msgEmail"></label>
+         </div>
+         <div class="formss">
+            <input type="text" placeholder="Sujet" id="sujet">
+            <label id="msgSujet"></label>
+         </div>
+         <div class="forums">
+            <input type="text" placeholder="message" id="message">
+            <label id="msgMessage"></label>
+         <button  id="submit" onclick="formValidation()">Send</button>
+         </div>
+      </div>
+   </section>
+   <footer class="main-footer">
+      <div class="social-media">
+         <h1 class="our-socialmedia">
+            where you can find us
+         </h1>
+         <div class="media-list">
+            <a href="#" class="icon-img"><img src="/icons/facebook.png" alt=""></a>
+            <a href="#" class="icon-img"><img src="/icons/instagram.png" alt=""></a>
+            <a href="#" class="icon-img"><img src="/icons/linkedin.png" alt=""></a>
+            <a href="#" class="icon-img"><img src="/icons/Twitter.png" alt=""></a>
+         </div>
+         <div class="news-letter">
+            <h1 class="news">News Letter</h1>
+            <div class="input-div">
+               <input type="email" placeholder="Enter Your Email" class="email">
+               <button class="btn-footer">Subscribe</button>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+</html>
