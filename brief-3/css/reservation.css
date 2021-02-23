@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 *{
    margin: 0;
@@ -6,33 +7,7 @@
    box-sizing: border-box;
 }
 
-.container{
-   width: 100%;
-   height: 100vh;
-   position: relative;
-}
-
-.reserv{
-   position: absolute;
-   top: 2em;
-   left: 30em;
-   font-family: 'Roboto', sans-serif;
-}
-
-.t-types {
-   position: absolute;
-   left: 37em;
-   top: 16em;
-}
-
-.main-header {
-   width: 100%;
-   height: 100%;
-   position: relative;
-}
-
 .nav {
-   position: absolute;
    width: 100%;
    height: 8vh;
    display: flex;
@@ -41,41 +16,29 @@
    background-color: #3C48D5;
 }
 
-.input {
-   position: relative;
-   width: 20vw;
-   top: 5em;
+.logo {
+   position: absolute;
+   width: fit-content;
+   left: 5em;
 }
 
-.input-2 {
-   position: relative;
-   top: 34em;
-   left: 19em;
-}
-
-.date {
-   position: relative;
-   top: 35em;
-   left: 15em;
-}
-
-.btn {
-   width: 8vw;
-   height: 6vh;
-   border: none;
-   background-color: #1f2568;
+.main-logo {
+   font-family: 'Lobster', cursive;
    color: #fff;
 }
 
 .main-nav {
    position: relative;
-   left: 24em;
+   left: 25em;
+   width: 30vw;
 }
 
 .nav-items {
    display: flex;
-   justify-content: center;
    align-items: center;
+}
+
+.nav-links {
    list-style: none;
 }
 
@@ -87,130 +50,234 @@
    font-size: 1.2em;
 }
 
-.logo {
-   position: absolute;
-   left: 5em;
-}
-
-.main-logo{
-   font-family: 'Lobster', cursive;
-   color: #fff;
-}
-
-.forme1 {
-   position: absolute;
-   top: 27em;
-   left: 19em;
-
-}
-
-.content {
+.products {
    width: 100%;
-   position: relative;
-   top: 10em;
-   left: 20em;
+   height: 96Vh;
+   position: absolute;
+   background-color: #ddd;
 }
 
-.t-types{
-   position: relative;
+.car-types {
    display: flex;
    justify-content: space-evenly;
    align-items: center;
+   position: relative;
+   top: 6em;
 }
 
-.auto-img  {
-   display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   position: absolute;
-   top: em;
-   right: 37em;
-   width: 100%;
-}
-
-.big-img {
-   position: absolute;
-   right: 20em;
-   top: 8em;
-   width: 100%;
-}
-
-.image {
+.car-types img {
    width: 20vw;
    height: 30vh;
    cursor: pointer;
 }
 
-.main-footer {
+.other-cars {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
    position: relative;
+   top: 10em;
+}
+
+.other-cars img {
+   width: 20vw;
+   height: 30vh;
+}
+
+.inputs {
+   position: relative;
+   width: 30vw;
+   height: 97vh;
+   top: 22em;
+   left: 40em;
+}
+
+.form-1 {
+   width: 30vw;
+   display: flex;
+   align-items: center;
+}
+
+.form-1 label {
+   padding-right: 16px;
+   padding-left: 5px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+}
+
+.form-2 {
+   position: relative;
+   top: 5em;
+   left: 5em;
+}
+
+.form-2 label {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+}
+
+.form-3 {
+   position: relative;
+   top: 8em;
+   left: 3em;
+   display: flex;
+   flex-direction: column;
+   width: 18vw;
+}
+
+.form-3 label {
+   font-family: 'Roboto', sans-serif;
+   padding-bottom: 6px;
+   position: relative;
+   left: 3em;
+   font-weight: 500;
+}
+
+.prix {
+   position: relative;
+   top: 2em;
+}
+
+.form-3 input {
+   width: 9vw;
+   position: relative;
+   left: 4em;
+}
+
+.form-3 button {
+   width: 8vw;
+   height: 5vh;
+   position: relative;
+   left: 5em;
+   top: 4em;
+   background-color: #3C48D5;
+   color: #fff;
+   border: none;
+}
+
+.header-carbu {
+   position: relative;
+   left: 7em;
+   bottom: 3em;
+   width: 8vw;
+   border-bottom: 2px #3C48D5 solid;
+   border-right: 2px #3C48D5 solid;
+}
+
+.header-carbu h1 {
+   font-family: 'Roboto', sans-serif;
+   color: #3C48D5;
+}
+
+.header-boit-de-vitesse {
+   position: relative;
+   top: 2em;
+   left: 6em;
+   width: 11vw;
+   border-bottom: 2px #3C48D5 solid;
+   border-right: 2px #3C48D5 solid;
+}
+
+.header-boit-de-vitesse h1 {
+   font-family: 'Roboto', sans-serif;
+   color: #3C48D5;
+}
+
+.jours-prix {
+   position: relative;
+   top: 6.6em;
+   left: 6em;
+   width: 9.6vw;
+   border-bottom: 2px #3C48D5 solid;
+   border-right: 2px #3C48D5 solid;
+}
+
+.jours-prix h1 {
+   font-family: 'Roboto', sans-serif;
+   color: #3C48D5;
+}
+
+.main-footer {
    width: 100%;
-   height: 40vh;
+   height: 50vh;
+   position: relative;
+   top: 80em;
    background-color: #3C48D5;
 }
 
 .social-media {
    position: absolute;
-   width: 100%;
-   height: 40vh;
-   background-color:#3C48D5;
+   top: 5em;
+   left: 6em;
 }
 
 .our-socialmedia {
+   width: 21vw;
    position: absolute;
-   top: 2em;
-   left: 3em;
+   top: 1em;
    font-family: 'Roboto', sans-serif;
-   color: #fff;
+   color: #ddd;
+   border-bottom: 2px #ddd solid;
+   text-align: center;
+   padding-bottom: 7px;
 }
 
 .media-list {
    position: absolute;
    top: 8em;
-   left: 5em;
+   left: 2em;
+   display: flex;
 }
 
-.media-list a {
-   margin-left: 1em;
+.icon-img {
+   margin-right: 2em;
 }
 
 .news-letter {
    position: absolute;
-   left: 60em;
-   top: 5em;
+   top: 2em;
+   left: 50em;
+   width: 30vw;
+   height: 16vh;
 }
 
-.news {
-   font-family: 'Roboto', sans-serif;
-   color: #fff;
+.contact{
    position: absolute;
-   width: 16vw;
+   top: 0.4em;
+   width: 12vw;
+   font-family: 'Roboto', sans-serif;
+   color: #ddd;
+   border-bottom: 2px #ddd solid;
+   text-align: center;
 }
 
 .input-div {
-   position: absolute;
-   top: 4em;
    display: flex;
+   position: absolute;
+   top: 3em;
 }
 
 .email {
-   width: 16vw;
-   height: 6vh;
-   text-align: center;
+   width: 18vw;
+   height: 7vh;
    border: none;
+   position: absolute;
+   top: 4em;
 }
 
 .btn-footer {
-   width: 6vw;
-   height: 6vh;
+   position: absolute;
+   top: 4em;
+   left: 21.6em;
+   width: 8vw;
+   height: 7vh;
    border: none;
    background-color: #1f2568;
-   color: #fff;
-}
-
-.news {
+   color: #FFF;
+   font-weight: 500;
    font-family: 'Roboto', sans-serif;
-   color: #fff;
-   position: absolute;
-   width: 16vw;
 }
 
+.boit-vitesse-2 {
+   position:relative;
+}

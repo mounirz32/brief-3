@@ -1,158 +1,66 @@
-var  btv=0;
-	var carb=0;
-	var prv=0;
-	function Reservation_moto() {
-		document.getElementById("Hybride").style="display:none";
-		document.getElementById("hybr").style="display:none";
-		document.getElementById("Diesel").style="display:none";
-		document.getElementById("diesel").style="display:none";
-		document.getElementById("auto_manu").style="display:none";
-		document.getElementById("Electrique").style="display:visible";
-		document.getElementById("elec").style="display:visible";
-		document.getElementById("Essence").style="display:visible";
-	 	document.getElementById("essence").style="display:visible";
-		prv=10;
+var boitDeVitesse = 0;
+var carbu = 0;
+var prix = 0;
 
+var Citadine=[
+	["boit-vitesse-2","none"],
+	["hyb", "visible"],
+	["die", "visible"],
+	["elect", "visible"],
+	["Esse", "visible"],
+	["boit-vitesse-1", "visible"]
+];
 
-	}
+var Compact=[
+	["boit-vitesse-2", "none"],
+	["elect", "none"],
+	["hyb", "visible"],
+	["Esse", "visible"],
+	["die", "visible"],
+	["boit-vitesse-1", "visible"]
+];
 
-	function Reservation_citadine(){
-		document.getElementById("Automatique").style="display:none";
-		document.getElementById("auto").style="display:none";
-		document.getElementById("auto_manu").style="display:visible";
-		document.getElementById("Hybride").style="display:visible";
-		document.getElementById("hybr").style="display:visible";
-		document.getElementById("Diesel").style="display:visible";
-		document.getElementById("diesel").style="display:visible";
-		document.getElementById("Electrique").style="display:visible";
-		document.getElementById("elec").style="display:visible";
-		document.getElementById("Essence").style="display:visible";
-	 	document.getElementById("essence").style="display:visible";
+var Berline=[
+	["elect", "none"],
+	["boit-vitesse-1", "none"],
+	["hyb", "visible"],
+	["Esse", "visible"],
+	["die", "visible"],
+	["boit-vitesse-2", "visible"]
+];
 
-		prv=12;
+var Utilitaire=[
+	["elect", "none"],
+	["hyb", "none"],
+	["Esse", "none"],
+	["boit-vitesse-2", "none"],
+	["die", "visible"],
+	["boit-vitesse-1", "visible"]
+];
 
-	}
-	function Reservation_compact(){
-        document.getElementById("Hybride").style="display:visible";
-	 	document.getElementById("hybr").style="display:visible";
-		document.getElementById("Essence").style="display:visible";
-	 	document.getElementById("essence").style="display:visible";
-	 	document.getElementById("Diesel").style="display:visible";
-	 	document.getElementById("diesel").style="display:visible";
-		document.getElementById("Electrique").style="display:none";
-		document.getElementById("elec").style="display:none";
-		document.getElementById("Automatique").style="display:none";
-		document.getElementById("auto").style="display:none";
-		document.getElementById("auto_manu").style="display:visible";
+function TypeCitadine() {
 
+	for( var i = 0; Citadine.length > i; i++) {
 		
-		prv=14;
-
+		document.getElementById(Citadine[i][0]).style.display = Citadine[i][1];
 	}
-	function Reservation_berline(){
-		 document.getElementById("Hybride").style="display:visible";
-	 	document.getElementById("hybr").style="display:visible";
-		document.getElementById("Essence").style="display:visible";
-	 	document.getElementById("essence").style="display:visible";
-	 	document.getElementById("Diesel").style="display:visible";
-	 	document.getElementById("diesel").style="display:visible";
-		document.getElementById("Electrique").style="display:none";
-		document.getElementById("elec").style="display:none";
-		document.getElementById("Manuelle").style="display:none";
-		 document.getElementById("manuelle").style="display:none";
-		 document.getElementById("auto_manu").style="display:visible";
-		 document.getElementById("Automatique").style="display:visible";
-		document.getElementById("auto").style="display:visible";
+};
 
-		 prv=20;
 
+function TypeCompact() {
+	for( var j = 0; Compact.length > j; j++) {
+		document.getElementById(Compact[j][0]).style.display = Compact[j][1];
 	}
-	function Reservation_utilitaire(){
-		document.getElementById("Electrique").style="display:none";
-		document.getElementById("elec").style="display:none";
-		document.getElementById("Hybride").style="display:none";
-		document.getElementById("hybr").style="display:none";
-		document.getElementById("Essence").style="display:none";
-		document.getElementById("essence").style="display:none";
-		document.getElementById("Automatique").style="display:none";
-		document.getElementById("auto").style="display:none";
-		document.getElementById("auto_manu").style="display:visible";
-		document.getElementById("Diesel").style="display:visible";
-	 	document.getElementById("diesel").style="display:visible";
-	 	document.getElementById("Manuelle").style="display:visible";
-		 document.getElementById("manuelle").style="display:visible";
+};
 
-		prv=16;
-
+function TypeBerline() {
+	for( var a = 0; Berline.length > a; a++) {
+		document.getElementById(Berline[a][0]).style.display = Berline[a][1];
 	}
-	function Reservation_engin_de_chantier(){
-		document.getElementById("Electrique").style="display:none";
-		document.getElementById("elec").style="display:none";
-		document.getElementById("Hybride").style="display:none";
-		document.getElementById("hybr").style="display:none";
-		document.getElementById("Automatique").style="display:none";
-		document.getElementById("auto").style="display:none";
-		document.getElementById("auto_manu").style="display:visible";
-		document.getElementById("Diesel").style="display:visible";
-	 	document.getElementById("diesel").style="display:visible";
-	 	document.getElementById("Manuelle").style="display:visible";
-		document.getElementById("manuelle").style="display:visible";
-		document.getElementById("Essence").style="display:visible";
-	 	document.getElementById("essence").style="display:visible";
+};
 
-		prv=900;
-
+function TypeUtilitaire() {
+	for( var x = 0; Utilitaire.length > x; x++) {
+		document.getElementById(Utilitaire[x][0]).style.display = Utilitaire[x][1];
 	}
-	function Reservation_camion(){
-		document.getElementById("Electrique").style="display:none";
-		document.getElementById("elec").style="display:none";
-		document.getElementById("Hybride").style="display:none";
-		document.getElementById("hybr").style="display:none";
-		document.getElementById("Essence").style="display:none";
-		document.getElementById("essence").style="display:none";
-		document.getElementById("Manuelle").style="display:none";
-		document.getElementById("manuelle").style="display:none";
-		document.getElementById("auto_manu").style="display:visible";
-		document.getElementById("Diesel").style="display:visible";
-	 	document.getElementById("diesel").style="display:visible";
-	 	document.getElementById("Automatique").style="display:visible";
-		document.getElementById("auto").style="display:visible";
-
-		prv=250;
-	}
-
-
-function calcul() {
-if(prv==0){
-	alert('selectionner un type');
-}
-
-	var dr=document.getElementById('dr').value;
-	var i=0;
-	var tabC=[5,9,14,21];
-	var tabv=[1,19];
-	var tabp=[10,12,14,20,16,900,250];
-	var rates = document.getElementsByName('gender');
-	var btvs = document.getElementsByName('bv');
-	var rate_value=-1;
-	var bv_value=-1;
-	var prixv_value;
-	for(i = 0; i < rates.length; i++){
-    	if(rates[i].checked){
-        	rate_value = i;
-    }
-}
-		if(rate_value!=-1)
-     carb=tabC[rate_value];
-    for(i = 0; i < btvs.length; i++){
-    	if(btvs[i].checked){
-        	bv_value = i;
-    }
-}
-	if(bv_value!=-1)
-    btv=tabv[bv_value];
-    var prixtotale= (prv +carb*100/prv  + btv*100/prv)*dr;
-    document.getElementById("prix").innerHTML=prixtotale;
-
-
-}
+};

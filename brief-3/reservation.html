@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/css/reservation.css">
+   <script src="https://kit.fontawesome.com/85b095fcc2.js" crossorigin="anonymous"></script>
+   <title>Car Agancy  || Reservation</title>	
+</head>
+<body>
+<header class="main-header">
+    <div class="nav">
+      <div class="logo">
+           <h1 class="main-logo">Car Agency</h1>
+     </div>
+     
+     <div class="main-nav">
+        <ul class="nav-items">
+           <li class="nav-links"><a href="index.html">Home</a></li>
+           <li class="nav-links"><a href="gallery.html">Gallery</a></li>
+           <li class="nav-links"><a href="reservation.html">Reservation</a></li>
+           <li class="nav-links"><a href="contact.html">Contact</a></li>
+        </ul> 
+     </div>
+  </div>
+</header>
+<section class="products">
+   <div class="car-types">
+      <img src="/gallery/car-1.png" alt="car-1" onclick="TypeCitadine()">
+      <img src="/gallery/car-2.jpg" alt="car-1" onclick="TypeCompact()">
+      <img src="/gallery/car-3.jpg" alt="car-1" onclick="TypeBerline()">
+      <img src="/gallery/car-4.jpg" alt="car-1" onclick="TypeUtilitaire()">
+   </div>
+   <div class="other-cars">
+      <img src="/gallery/moto-1.jpg" alt="moto-1" onclick="">
+      <img src="/gallery/camion-1.png" alt="camion-1" onclick="">
+      <img src="/gallery/chantie-1.jpg" alt="chantie-1" onclick="">
+   </div>
+   <div class="inputs">
+      <div class="header-carbu">
+         <h1>Carburant</h1>
+      </div>
+      <form class="form-1">
+         <div id="elect">
+            <input type="radio" id="Electrique" name="gender" value="Electrique">
+            <label for="male" id="electrique">Electrique</label>
+         </div>
+         <div id="hyb">
+            <input type="radio" id="Hybrid" name="gender" value="Hybrid">
+            <label for="female" id="hybrid">Hybride</label>
+         </div>
+         <div id="Esse">
+            <input type="radio" id="Essence" name="gender" value="Essence">
+            <label for="other" id="essence">Essence</label> 
+         </div>
+         <div id="die">
+            <input type="radio" id="Diesel" name="gender" value="Diesel">
+            <label for="other" id="diesel">Diesel</label>
+         </div>
+         
+      </form>
+      <div class="header-boit-de-vitesse">
+         <h1>Boit de vitesse</h1>
+      </div>
+      <form class="form-2">
+         <div id="boit-vitesse-1">
+            <input type="radio" id="Manuelle" name="bv">
+            <label  id="manuelle">Manuelle</label>
+         </div>
+         <div id="boit-vitesse-2">
+            <input type="radio" id="Auto" name="boit">
+            <label  id="automatique">Automatique</label>
+         </div>
+            
+         
+         
+      </form>
+      <div class="jours-prix">
+         <h1>duree et prix</h1>
+      </div>
+      <form class="form-3">
+         <div id="price">
+            <label class="num">Number of Day :</label>
+            <input class="jour" type="number" id="day">
+            <label class="prix">total price :</label>
+            <label id="prix"></label>
+         </div>
+         
+         <button>Reserve</button>
+      </form>
+   </div>
+</section>
+<footer class="main-footer">
+   <div class="social-media">
+      <h1 class="our-socialmedia">
+         where you can find us
+      </h1>
+      <div class="media-list">
+         <a href="#" class="icon-img"><img src="/icons/facebook.png" alt=""></a>
+         <a href="#" class="icon-img"><img src="/icons/instagram.png" alt=""></a>
+         <a href="#" class="icon-img"><img src="/icons/linkedin.png" alt=""></a>
+         <a href="#" class="icon-img"><img src="/icons/Twitter.png" alt=""></a>
+      </div>
+      <div class="news-letter">
+         <h1 class="contact">News Letter</h1>
+         <div class="input-div">
+            <input type="email" placeholder="   Enter Your Email" class="email">
+            <button class="btn-footer">Subscribe</button>
+         </div>
+      </div>
+   </div>
+</footer>
+
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
