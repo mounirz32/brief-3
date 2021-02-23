@@ -69,6 +69,7 @@
    width: 20vw;
    height: 30vh;
    cursor: pointer;
+   box-shadow: 5px 5px 10px #000;
 }
 
 .other-cars {
@@ -82,6 +83,8 @@
 .other-cars img {
    width: 20vw;
    height: 30vh;
+   cursor: pointer;
+   box-shadow: 5px 5px 10px #000;
 }
 
 .inputs {
@@ -281,3 +284,4 @@
 .boit-vitesse-2 {
    position:relative;
 }
+
